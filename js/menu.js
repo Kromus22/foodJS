@@ -2,8 +2,14 @@ const cardsMenu = document.querySelector('.cards-menu')
 
 const changeTitle = (restaurant) => {
     const restaurantTitle = document.querySelector('.restaurant-title')
+    const rating = document.querySelector('.rating')
+    const price = document.querySelector('.price')
+    const category = document.querySelector('.category')
 
     restaurantTitle.textContent = restaurant.name
+    rating.textContent = restaurant.stars
+    price.textContent = "От " + restaurant.price + " ₽"
+    category.textContent = restaurant.kitchen
 }
 
 const renderItems = (data) => {
