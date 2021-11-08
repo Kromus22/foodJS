@@ -49,16 +49,6 @@ const partners = () => {
             console.log(error);
         })
 }
-
-<<<<<<< HEAD
 partners()
-=======
-fetch('https://test-5b25a-default-rtdb.firebaseio.com/db/partners.json')
-    .then((response) => response.json())
-    .then((data) => {
-        renderItems(data)
-    })
-    .catch((error) => {
-        console.log(error);
-    })
->>>>>>> 8f3a4851a1f042044df7802644dee0ecb9c4768c
+
+
